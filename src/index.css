@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: nunito_variable;
+    src: url(../public/assets/fonts/Nunito-VariableFont_wght.ttf);
+} @font-face {
+    font-family: gustatory_delight;
+    src: url(../public/assets/fonts/GustatoryDelightRegular-rgX3L.ttf);
+} @font-face {
+    font-family: beautiful_people_personal_use;
+    src: url(../public/assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: nunito_variable;
+} h1 {
+    text-align: center;
 }

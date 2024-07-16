@@ -1,0 +1,30 @@
+#main-nav-bar {
+    background-color: red;
+
+    width: 100%;
+    height: 5vh;
+
+    position: absolute;
+    top: calc(100% - 5vh);
+
+    display: flex;
+
+    /* justify-content: space-evenly; */
+    /* justify-items: center; */
+    gap: 100px;
+    padding-left: 65%;
+    text-align: center;
+
+    color: white;
+}
+
+#main-nav-bar .Link {
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    user-select: none;
+}
+
+#main-nav-bar .Link:hover {
+    transform: scaleX(1.04);
+}

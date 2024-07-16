@@ -1,0 +1,33 @@
+input[id='toggle-dark-1']:is(input[type="checkbox"]) {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    user-select: none;
+}
+
+label[for='toggle-dark-1-label'] {
+    border-radius: 50%;
+    height: 80%;
+    aspect-ratio: 1;
+
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transition: all 0.5s;
+    user-select: none;
+}
+
+input[id='toggle-dark-1']:is(input[type="checkbox"]:is(:checked)) + label[for='toggle-dark-1'] label[for='toggle-dark-1-label'] {
+    left: calc(100% - 2px);
+    transform: translate(-100%, -50%);
+}
+
+label[for='toggle-dark-1'] {
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    /* border-width: 1px;
+    border-style: solid; */
+    user-select: none;
+}
